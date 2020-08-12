@@ -18,7 +18,7 @@ dragon_de_jade = { name: "Le Dragon de Jade", address: "Boulevard Saint-Marcel",
 verre_siffleur = { name: "Le Verre Siffleur", address: "Rue d'Alésia", phone_number: "0737673737", category: "french" }
 bruxelles_vie = { name: "Bruxelles Vie", address: "Grand Place, Bruxelles", phone_number: "0478467895", category: "belgian" }
 
-[dishoom, pizza_east].each do |attributes|
+[dishoom, pizza_east, leon, vin_et_maree, yakitori_paradise, dragon_de_jade, verre_siffleur, bruxelles_vie].each do |attributes|
   restaurant = Restaurant.create!(attributes)
   puts "Created #{restaurant.name}"
 end

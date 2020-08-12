@@ -1,6 +1,9 @@
 <h1><%= @restaurant.name %></h1>
 
 <ul>
-  <li>Address: <strong><%= @restaurant.address %></strong></li>
-  <li>Rating: <%= "★" * @restaurant.rating %><%= "☆" * (5 - @restaurant.rating) %></li>
+  <li><strong>Address: </strong><%= @restaurant.address %></li>
+  <li><strong>Phone number: </strong><%= @restaurant.phone_number %></li>
+  <li><strong>Category: </strong><%= @restaurant.category %></li>
 </ul>
+
+<%= link_to "Back to all restaurants", restaurants_path %>
