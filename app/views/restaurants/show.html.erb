@@ -1,11 +1,15 @@
 <div class="container">
   <h1><%= @restaurant.name %></h1>
 
-  <ul>
-    <li><strong>Address: </strong><%= @restaurant.address %></li>
-    <li><strong>Phone number: </strong><%= @restaurant.phone_number %></li>
-    <li><strong>Category: </strong><%= @restaurant.category %></li>
-  </ul>
+  <p>
+    <strong>Address:</strong>
+    <%= @restaurant.address %>
+  </p>
+
+  <p>
+    <strong>Category:</strong>
+    <%= @restaurant.category %>
+  </p>
 
 <div>
   <h4>See what customers think of this restaurant</h4>
